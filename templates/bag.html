@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<section class="bag-section">
+    <div class="container">
+        <div class="col-left">
+            <img src="{% static 'img/leather-bag.jpg' %}" alt="">
+
+        </div>
+        <div class="col-right">
+            <h1 class="heading">Bag Title</h1>
+            <p class="bag-desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.
+            </p>
+            <a href="#order"> <button>order this bag</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="order-form" id="order">
+
+    <div class="container">
+        <div class="col-left">
+            <h1 class="heading">Fill the form with relavant delivery info</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.
+            </p>
+        </div>
+
+        <div class="col-right">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-elements">
+                    <div class="half-form-element">
+                        {{form.first_name}}
+                    </div>
+                    <div class="half-form-element">
+                        {{form.last_name}}
+                    </div>
+                </div>
+                <div class="form-elements">
+                    <div class="half-form-element">
+                        {{form.email}}
+                    </div>
+                    <div class="half-form-element">
+                        {{form.phone_number}}
+                    </div>
+                </div>
+                <div class="form-elements">
+                    <div class="half-form-element">
+                        {{form.location}}
+                    </div>
+                </div>
+
+                <div class="form-elements">
+                    <div class="half-form-element">
+                        <input class="btn" type="submit" value="Confirm order">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

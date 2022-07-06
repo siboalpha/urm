@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="col-left">
+                <h1 class="big-heading">Welcome to URM</h1>
+                <p class="welcome-text">
+                    URM is a Rwandan based fashion brand that manufactures
+                    bags with the help of people living with disabilities.
+                    We are dedicated to bringing you exquisite and stylish bags
+                    without breaking the bank.
+                </p>
+                <a href=""> <button>Learn more</button></a>
+            </div>
+
+            <div class="col-right">
+                <div class="empy">This is empy</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h1 class="heading">About Us</h1>
+            <p>
+                Our mission is not only to generate income opportunities but
+                to also restore the hope and dreams of people living with
+                disabilities by offering them employment opportunities through
+                our brand.
+
+                URM is built to provide an opportunity to rebuild livelihoods
+                and re-establish independence of people living with speaking
+                disability by offering them employment opportunities
+            </p>
+            <a href=""><button>Get in touch</button></a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="heading"> Our Services</h1>
+            <p class="services-desc">
+                What if there was a chance to make an actual difference? 
+                We are a brand that specializes in giving employment 
+                opportunities to people living with disabilities. 
+                We are able to offer this because of the trusty staff we 
+                have working with us. These people have selflessly dedicated 
+                themselves to our cause for years, and the best part is that 
+                they are so passionate about what we do!
+            </p>
+
+            <div class="service-cards">
+                <div class="card service">
+                    <div class="card-title">Bag creation</div>
+                    <p>
+                        No one likes waste; that's why we created handbags that are made from 
+                        recycled paper. These bags are strong, sustainable, and gorgeous. 
+                        Not to mention, they're a fraction of the cost of other handbags.
+                    </p>
+                    <a href="{% url 'shop' %}"><button>Shop now</button></a>
+                </div>
+
+                <div class="card service">
+                    <div class="card-title">paper recycling</div>
+                    <p>
+                        Say goodbye to paper piles. Recycle papers of all sizes into 
+                        something new. We can't wait to turn your old magazines, newspapers, 
+                        old notebooks and more into something useful again.
+                    </p>
+                    <a href="/#contact"><button>Get in touch</button></a>
+                </div>
+                <div class="card service">
+                    <div class="card-title">employment</div>
+                    <p>
+                        We work with people with disabilities and their families to help them 
+                        find employment opportunities that match their skills, interests, 
+                        and experience.
+                    </p>
+                    <a href="/#contact"><button>Check vacant</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action" id="call-to-action">
+        <div class="container">
+            <h1 class="heading">Buy and help us help other</h1>
+            <p class="call-to-action-text">
+                live the life of fashion ,a bag for your future a destiny fulfilled, 
+                your desire recycled in this bag shop with us for yourself
+            </p>
+            <a href="{% url 'shop' %}"><button>Shop now</button></a>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="col-left">
+                <h1 class="heading">Benefits</h1>
+                <p>
+                    Recycling papers is the first step to make our environment clean.
+                     We collect papers of different sizes and recycle them so that we 
+                     can make our environment better.
+                </p>
+                <ul class="benefits-list">
+                    <li><div class="list-number">1.</div> For the environmentally-conscious, these products are recycled and reused to combat plastic pollution.</li>
+                    <li><span class="list-number">2.</span> It's a win-win for your wallet and the environment. Not only that, you're helping our local economy by buying local goods.</li>
+                    <li><span class="list-number">3.</span> Making your purchase means you're also helping provide jobs for people in need!</li>
+                </ul>
+            </div>
+
+            <div class="col-right">
+                <img src="{% static 'img/leather-bag.jpg' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="container">
+            <h1 class="heading">Buy and help us help other</h1>
+            <p class="call-to-action-text">
+                live the life of fashion ,a bag for your future a destiny fulfilled, 
+                your desire recycled in this bag shop with us for yourself
+            </p>
+            <a href="{% url 'shop' %}"><button>Shop now</button></a>
+        </div>
+    </section>
+
+    <section class="testmonials" id="testimonials">
+        <div class="container">
+            <h1 class="heading">What Clients Say?</h1>
+            <p class="testmoial-desc">
+                We asked different people about their feedback on our first bag launch.
+                We wanted feedback about consept, impact design and fashion style of our bags, and here is what they think
+            </p>
+
+            <div class="testimonials-cards">
+                <div class="card">
+                    <p class="testmony">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book.
+                    </p>
+                    <p class="name">SIBOMANA Alphonse</p>
+                    <img class="profile" src="{% static 'img/alphonse.png' %}" alt="">
+                </div>
+
+                <div class="card">
+                    <p class="testmony">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book.
+                    </p>
+                    <p class="name">SIBOMANA Alphonse</p>
+                    <img class="profile" src="{% static 'img/alphonse.png' %}" alt="">
+                </div>
+
+                <div class="card">
+                    <p class="testmony">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book.
+                    </p>
+                    <p class="name">SIBOMANA Alphonse</p>
+                    <img class="profile" src="{% static 'img/alphonse.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            
+            <div class="col-left">
+                <h1 class="heading">Get in touch</h1>
+                <p>
+                    We are open to ideas and sujjections. Or if you have any question, feel free
+                    to contact us via our contact channels. You may feel the form to send us a 
+                    quick message
+                </p>
+
+                <ul class="contact-links">
+                    <li><a href="tel:+250 786 085 087"><img src="{% static 'img/icons/Phone.png' %}" alt="icon">+250 786 085 087</a></li>
+                    <li><a href="mailto:example@email.com"><img src="{% static 'img/icons/Message.png' %}" alt="icon">example@email.com</a></li>
+                    <li><a href="#"><img src="/img/icons/Location.png' %}" alt="icon">KIGALI Rwanda, Kimihurura Fair View Building</a></li>
+                    <div class="social-icons">
+                        <li><a href="#"><img src="{% static 'img/icons/Facebook.png' %}" alt="icon">Faceboom</a></li>
+                        <li><a href="#"><img src="{% static 'img/icons/instagram.png' %}" alt="icon">Instagram</a></li>
+                        <li><a href="#"><img src="{% static 'img/icons/Twitter.png' %}" alt="icon">Twitter</a></li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="col-right">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="form-elements">
+                        <div class="half-form-element">
+                            {{form.first_name}}
+                        </div>
+                        <div class="half-form-element">
+                            {{form.last_name}}
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <div class="half-form-element">
+                            {{form.email}}
+                        </div>
+                        <div class="half-form-element">
+                            {{form.phone_number}}
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <div class="full-form-element">
+                            {{form.message}}
+                        </div>
+                    </div>
+                    <div class="form-elements">
+                        <div class="half-form-element">
+                            <input class="btn" type="submit" value="Send message">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

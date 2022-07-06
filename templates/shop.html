@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+    <section class="shop-header">
+        <div class="container">
+            <div class="col-left">
+                <h1 class="heading">Shop Between our new released bags</h1>
+                <p class="shop-desc">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
+                    used to demonstrate the visual form of a document or a typeface without 
+                    relying on meaningful content. Lorem ipsum may be used as a placeholder 
+                    before final copy is available.
+                </p>
+            </div>
+            <div class="col-right">
+                <div class="product">
+                    <img src="{% static 'img/leather-bag.jpg' %}" alt="" class="product-img">
+                    <h4 class="product-title">Leather bag one</h4>
+                    <p class="product-desc">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
+                        used to demonstrate the visual form of a document or a
+                    </p>
+                    <a href="{% url 'bag' %}"><button>Place order</button> </a>         
+                </div>
+                <div class="product">
+                    <img src="{% static 'img/leather-bag.jpg' %}" alt="" class="product-img">
+                    <h4 class="product-title">Leather bag one</h4>
+                    <p class="product-desc">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
+                        used to demonstrate the visual form of a document or a
+                    </p>
+                    <a href="{% url 'bag' %}"><button>Place order</button> </a>               
+                </div>
+            </div>
+        </div>
+    </section>
+
+ {% endblock %}
