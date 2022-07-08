@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/siboalpha/Desktop/PROJECTS/URM/site/venv"
+VIRTUAL_ENV="/Users/siboalpha/Desktop/PROJECTS/URM/urm-site/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
