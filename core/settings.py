@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv("MY_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['urm.rw', 'www.urm.rw']
 
 
 #Email Backend
