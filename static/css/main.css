@@ -39,6 +39,7 @@ body {
 
 .brand a img {
   height: 60px;
+  width: auto;
 }
 
 @media only screen and (min-width: 799px) {
